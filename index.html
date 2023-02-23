@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <title>Stripe CSS</title>
   
 </head>
 <body>
   <header class="hero">
     <div class="container">
-      <h1>Payments infrastructure for the internet</h1>
+      <div class="hero-title-container">
+        <h1 class="hero-title">Payments infrastructure for the internet</h1>
+        <p class="hero-title" data-overlay aria-hidden="true"></p>
+      </div>
     </div>
-    <canvas id="canv" width="32" height="32"></canvas>
+    <div class="canvas-container">
+      <canvas id="canv" width="32" height="32"></canvas>
+    </div>
   </header>
-  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="/main.js"></script>
 </body>
 </html>

@@ -9,16 +9,51 @@ body{
   margin: 0;
 }
 
-h1{
-  line-height: 1.1;
-  font-size: 5rem;
-  min-width: 13ch;
-}
 
 .container{
-  --max-width:50rem;
+  --max-width: 50rem;
   width: min(100% - 2rem, var(--max-width));
   margin-inline: auto;
+}
+
+
+.hero{
+  position: relative;
+  isolation: isolate;
+  padding: 1em;
+}
+
+.hero-title-container{
+  position: relative;
+  margin-block: 3rem;
+}
+.hero-title{
+  color: #3a3a3a;
+  mix-blend-mode: color-burn;
+  line-height: 1.1;
+  font-size: 8rem;
+  font-weight: 700;
+  min-width: 13ch;
+  margin: 0;
+}
+
+.hero-title[data-overlay]{
+  mix-blend-mode: revert;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  color: #111;
+  z-index: 2;
+  opacity: .4;
+}
+
+
+.canvas-container{
+  position: absolute;
+  z-index: -1;
+  inset:0;
+  height: 40vh;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 100%);
 }
 
 canvas{
