@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+
+h1{
+  line-height: 1.1;
+  font-size: 5rem;
+  min-width: 13ch;
+}
+
+.container{
+  --max-width:50rem;
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+
+canvas{
+  width: 100%;
+  height: 100%;
+}
